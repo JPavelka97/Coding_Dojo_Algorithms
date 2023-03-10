@@ -100,4 +100,18 @@ function partition(nums = [], left = 0, right = nums.length - 1) {
     return i
 }
 
-console.log(partition(nums1))
+function quickSort(nums = [], left = 0, right = nums.length - 1) {
+    var index;
+    if (nums.length > 1) {
+        index = partition(nums, left, right);
+        if (left > index - 1){
+            quickSort(nums,left,index-1);
+        }
+        if(index < right){
+            quickSort(nums, index, right)
+        }
+    }
+    return nums
+}
+
+console.log(quickSort(nums1))
