@@ -1,0 +1,41 @@
+const friend1 = {
+    firstName: "Friend",
+    lastName: "One",
+    isSocialDistancing: false,
+    hasCovid: true,
+};
+
+const friend2 = {
+    firstName: "Friend",
+    lastName: "Two",
+    isSocialDistancing: false,
+    hasCovid: true,
+};
+
+const friend3 = {
+    firstName: "Friend",
+    lastName: "Three",
+    isSocialDistancing: false,
+    hasCovid: false,
+};
+
+const people = [
+    {
+        firstName: "Person",
+        lastName: "One",
+        isSocialDistancing: false,
+        friends: [friend2, friend3],
+    },
+    {
+        firstName: "Person",
+        lastName: "Two",
+        isSocialDistancing: true,
+        friends: [friend2, friend1],
+    },
+    {
+        firstName: "Person",
+        lastName: "Three",
+        isSocialDistancing: false,
+        friends: [friend2, friend1],
+    },
+];
